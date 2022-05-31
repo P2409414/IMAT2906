@@ -1,0 +1,254 @@
+\hypertarget{class_game}{}\doxysection{Game Class Reference}
+\label{class_game}\index{Game@{Game}}
+
+
+{\ttfamily \#include $<$Game.\+h$>$}
+
+
+
+Inherits sf\+::\+Drawable.
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_game_ad59df6562a58a614fda24622d3715b65}{Game}} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_a630b0c0837520829415c3bd1ae9b85b0}{update}} (float time)
+\begin{DoxyCompactList}\small\item\em Function to allow updates to be handled from within this class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_a143d1a2f8a527db60f1fe47ab3d854a7}{draw}} (sf\+::\+Render\+Target \&target, sf\+::\+Render\+States states) const
+\begin{DoxyCompactList}\small\item\em Function to allow objects from the game class to be drawn to the Render\+Window in main.\+cpp. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_a2dd42d5e2574b0fb6d3fa57f2505455a}{process\+Event}} (sf\+::\+Event \&e)
+\begin{DoxyCompactList}\small\item\em Function to allow events to be processed within this class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_a9bb596b79b6626d56ba13bc900d5276c}{set\+Blocks\+True}} ()
+\begin{DoxyCompactList}\small\item\em Function to set all the blocks to draw. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_game_a82d0e4707e893cbeba477f39de949299}{win}} ()
+\begin{DoxyCompactList}\small\item\em Function to send the bool value of the win\+State variable to main.\+cpp. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_game_a08e7b42e668b0fbfa9826b2d21906e7c}{lose}} ()
+\begin{DoxyCompactList}\small\item\em Function to send the bool value of the lose\+State variable to main.\+cpp. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Creates the \mbox{\hyperlink{class_game}{Game}} class deriving from sf\+::\+Drawable 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_game_ad59df6562a58a614fda24622d3715b65}\label{class_game_ad59df6562a58a614fda24622d3715b65}} 
+\index{Game@{Game}!Game@{Game}}
+\index{Game@{Game}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{Game()}{Game()}}
+{\footnotesize\ttfamily Game\+::\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+\mbox{\hyperlink{class_game}{Game}} constructor that puts data into all the variables on program start. $<$ Putting data into the ballstart location.
+
+$<$ Inputting the data required to create the ball object using the \mbox{\hyperlink{class_physics_object}{Physics\+Object}} class.
+
+$<$ Inputting the data required to create the paddle using the \mbox{\hyperlink{class_paddle}{Paddle}} class.
+
+$<$ Inputting the data for the first border using the \mbox{\hyperlink{class_borders}{Borders}} class.
+
+$<$ Inputting the data for the second border using the \mbox{\hyperlink{class_borders}{Borders}} class.
+
+$<$ Inputting the data for the third border using the \mbox{\hyperlink{class_borders}{Borders}} class.
+
+$<$ Inputting the data for the fourth border using the \mbox{\hyperlink{class_borders}{Borders}} class.
+
+$<$ Inputting the data for the first block using the \mbox{\hyperlink{class_blocks}{Blocks}} class.
+
+$<$ Inputting the data for the second block using the \mbox{\hyperlink{class_blocks}{Blocks}} class.
+
+$<$ Inputting the data for the third block using the \mbox{\hyperlink{class_blocks}{Blocks}} class.
+
+$<$ Inputting the data for the fourth block using the \mbox{\hyperlink{class_blocks}{Blocks}} class.
+
+$<$ Inputting the data for the fifth block using the \mbox{\hyperlink{class_blocks}{Blocks}} class.
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_game_a143d1a2f8a527db60f1fe47ab3d854a7}\label{class_game_a143d1a2f8a527db60f1fe47ab3d854a7}} 
+\index{Game@{Game}!draw@{draw}}
+\index{draw@{draw}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Game\+::draw (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Target \&}]{target,  }\item[{sf\+::\+Render\+States}]{states }\end{DoxyParamCaption}) const}
+
+
+
+Function to allow objects from the game class to be drawn to the Render\+Window in main.\+cpp. 
+
+\mbox{\hyperlink{class_game}{Game}} draw function to pass data to the Render\+Window in main.\+cpp $<$ If statement to check for the first block being destroyed or not.
+
+$<$ Draws the first block.
+
+$<$ If statement to check for the second block being destroyed or not and then draw the block.
+
+$<$ Draws the second block.
+
+$<$ If statement to check for the third block being destroyed or not and then draw the block.
+
+$<$ Draws the third block.
+
+$<$ If statement to check for the fourth block being destroyed or not and then draw the block.
+
+$<$ Draws the fourth block.
+
+$<$ If statement to check for the fifth block being destroyed or not and then draw the block.
+
+$<$ Draws the fifth block.
+
+$<$ Draw the userpaddle.
+
+$<$ Draw the ball.\mbox{\Hypertarget{class_game_a08e7b42e668b0fbfa9826b2d21906e7c}\label{class_game_a08e7b42e668b0fbfa9826b2d21906e7c}} 
+\index{Game@{Game}!lose@{lose}}
+\index{lose@{lose}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{lose()}{lose()}}
+{\footnotesize\ttfamily bool Game\+::lose (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Function to send the bool value of the lose\+State variable to main.\+cpp. 
+
+\mbox{\hyperlink{class_game}{Game}} win function to check for the lose\+State bool and either end the game or continue it depending on the value. $<$ If statement to check to see if the game is still going.
+
+$<$ Returns false if the game is still going.
+
+$<$ Returns true if the ball has fallen past the paddle.\mbox{\Hypertarget{class_game_a2dd42d5e2574b0fb6d3fa57f2505455a}\label{class_game_a2dd42d5e2574b0fb6d3fa57f2505455a}} 
+\index{Game@{Game}!processEvent@{processEvent}}
+\index{processEvent@{processEvent}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{processEvent()}{processEvent()}}
+{\footnotesize\ttfamily void Game\+::process\+Event (\begin{DoxyParamCaption}\item[{sf\+::\+Event \&}]{e }\end{DoxyParamCaption})}
+
+
+
+Function to allow events to be processed within this class. 
+
+\mbox{\hyperlink{class_game}{Game}} process\+Event function to process any events from the Render\+Window in main to allow for the movement of the paddle controlled by the keyboard and the pause function. $<$ Hands data over to the \mbox{\hyperlink{class_paddle}{Paddle}} function for processing keypresses.
+
+$<$ If statement to check for the \char`\"{}\+P\char`\"{} button being pressed and to then either pause or unpause the ball\textquotesingle{}s movement.
+
+$<$ Stores the current ball velocity.
+
+$<$ Sets the ball velocity to 0.
+
+$<$ sets the paused variable to true so that it will unpause the next time \char`\"{}\+P\char`\"{} is pressed.
+
+$<$ Sets the ball velocity to the stored velocity.
+
+$<$ sets the paused variable to false so that it will pause the next time \char`\"{}\+P\char`\"{} is pressed.\mbox{\Hypertarget{class_game_a9bb596b79b6626d56ba13bc900d5276c}\label{class_game_a9bb596b79b6626d56ba13bc900d5276c}} 
+\index{Game@{Game}!setBlocksTrue@{setBlocksTrue}}
+\index{setBlocksTrue@{setBlocksTrue}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{setBlocksTrue()}{setBlocksTrue()}}
+{\footnotesize\ttfamily void Game\+::set\+Blocks\+True (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Function to set all the blocks to draw. 
+
+\mbox{\hyperlink{class_game}{Game}} set\+Blocks\+True function that is called in main to draw the blocks once the game has loaded. $<$ Sets the first block to true.
+
+$<$ Sets the second block to true.
+
+$<$ Sets the third block to true.
+
+$<$ Sets the fourth block to true.
+
+$<$ Sets the fifth block to true.\mbox{\Hypertarget{class_game_a630b0c0837520829415c3bd1ae9b85b0}\label{class_game_a630b0c0837520829415c3bd1ae9b85b0}} 
+\index{Game@{Game}!update@{update}}
+\index{update@{update}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Game\+::update (\begin{DoxyParamCaption}\item[{float}]{time }\end{DoxyParamCaption})}
+
+
+
+Function to allow updates to be handled from within this class. 
+
+\mbox{\hyperlink{class_game}{Game}} update function to be done every frame to allow collision checks to be made so that I can make the ball bounce off of the paddle and the borders and destroy blocks. Also used for win/lose state checks and pause checks. $<$ Calls the update function from the \mbox{\hyperlink{class_physics_object}{Physics\+Object}} class to allow the ball to move.
+
+$<$ If statement that checks for the collision between the paddle and ball and gets the Y postion of the ball to ensure it bounces correctly off of the paddle.
+
+$<$ Sets the velocity of the ball to the same X velocity but the opposite Y velocity to bounce it in the Y direction.
+
+$<$ Sets the velocity of the ball to the same Y velocity but the opposite X velocity to bounce it in the X direction.
+
+$<$ If statement that checks for the collision between the first block and the ball and gets the Y position of the ball to ensure it bounces correctly off of the block as well as change the colour in the first stage and destroy it in the second stage.
+
+$<$ Sets the velocity of the ball to the same X velocity but the opposite Y velocity to bounce it in the Y direction.
+
+$<$ Changes the colour of the block while keeping everything else the same.
+
+$<$ Sets the velocity of the ball to the same Y velocity but the opposite X velocity to bounce it in the X direction.
+
+$<$ Changes the colour of the block while keeping everything else the same.
+
+$<$ Sets the first block to false to unload it.
+
+$<$ If statement that checks for the collision between the second block and the ball and gets the Y position of the ball to ensure it bounces correctly off of the block as well as change the colour in the first stage and destroy it in the second stage.
+
+$<$ Sets the velocity of the ball to the same X velocity but the opposite Y velocity to bounce it in the Y direction.
+
+$<$ Changes the colour of the block while keeping everything else the same.
+
+$<$ Sets the velocity of the ball to the same Y velocity but the opposite X velocity to bounce it in the X direction.
+
+$<$ Changes the colour of the block while keeping everything else the same.
+
+$<$ Sets the first block to false to unload it.
+
+$<$ If statement that checks for the collision between the third block and the ball and gets the Y position of the ball to ensure it bounces correctly off of the block as well as change the colour in the first stage and destroy it in the second stage.
+
+$<$ Sets the velocity of the ball to the same X velocity but the opposite Y velocity to bounce it in the Y direction.
+
+$<$ Changes the colour of the block while keeping everything else the same.
+
+$<$ Sets the velocity of the ball to the same Y velocity but the opposite X velocity to bounce it in the X direction.
+
+$<$ Changes the colour of the block while keeping everything else the same.
+
+$<$ Sets the first block to false to unload it.
+
+$<$ If statement that checks for the collision between the fourth block and the ball and gets the Y position of the ball to ensure it bounces correctly off of the block as well as change the colour in the first stage and destroy it in the second stage.
+
+$<$ Sets the velocity of the ball to the same X velocity but the opposite Y velocity to bounce it in the Y direction.
+
+$<$ Changes the colour of the block while keeping everything else the same.
+
+$<$ Sets the velocity of the ball to the same Y velocity but the opposite X velocity to bounce it in the X direction.
+
+$<$ Changes the colour of the block while keeping everything else the same.
+
+$<$ Sets the first block to false to unload it.
+
+$<$ If statement that checks for the collision between the fifth block and the ball and gets the Y position of the ball to ensure it bounces correctly off of the block as well as change the colour in the first stage and destroy it in the second stage.
+
+$<$ Sets the velocity of the ball to the same X velocity but the opposite Y velocity to bounce it in the Y direction.
+
+$<$ Changes the colour of the block while keeping everything else the same.
+
+$<$ Sets the velocity of the ball to the same Y velocity but the opposite X velocity to bounce it in the X direction.
+
+$<$ Changes the colour of the block while keeping everything else the same.
+
+$<$ Sets the first block to false to unload it.
+
+$<$ If statement that checks for all five blocks being destroyed and sets the win state to true to end the game.
+
+$<$ Sets winstate to true to end the game.\mbox{\Hypertarget{class_game_a82d0e4707e893cbeba477f39de949299}\label{class_game_a82d0e4707e893cbeba477f39de949299}} 
+\index{Game@{Game}!win@{win}}
+\index{win@{win}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{win()}{win()}}
+{\footnotesize\ttfamily bool Game\+::win (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Function to send the bool value of the win\+State variable to main.\+cpp. 
+
+\mbox{\hyperlink{class_game}{Game}} win function to check for the win\+State bool and either end the game or continue it depending on the value. $<$ If statement to check to see if the game is still going.
+
+$<$ Returns false if the game is still going.
+
+$<$ Returns true if all blocks have been destroyed.
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Program Files (x86)/\+Microsoft Visual Studio/2017/\+Projects/\+Breakout P2409414/\+Breakout P2409414/Game.\+h\item 
+D\+:/\+Program Files (x86)/\+Microsoft Visual Studio/2017/\+Projects/\+Breakout P2409414/\+Breakout P2409414/Game.\+cpp\end{DoxyCompactItemize}

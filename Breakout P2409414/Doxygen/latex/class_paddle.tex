@@ -1,0 +1,84 @@
+\hypertarget{class_paddle}{}\doxysection{Paddle Class Reference}
+\label{class_paddle}\index{Paddle@{Paddle}}
+
+
+{\ttfamily \#include $<$Paddle.\+h$>$}
+
+
+
+Inherits \mbox{\hyperlink{class_physics_object}{Physics\+Object}}.
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_paddle_a53895671ddfde9ba668546065ec4f164}\label{class_paddle_a53895671ddfde9ba668546065ec4f164}} 
+\mbox{\hyperlink{class_paddle_a53895671ddfde9ba668546065ec4f164}{Paddle}} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_paddle_aba2e99ac823862ddf144fe3b4d1e3330}{Paddle}} (sf\+::\+Vector2f position, sf\+::\+Vector2f dimensions, sf\+::\+Color color)
+\begin{DoxyCompactList}\small\item\em Function to pass data from the \mbox{\hyperlink{class_game}{Game}} class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_paddle_afe2b129df6a2fcf916ef1f6e0e02ae86}{process\+Event}} (sf\+::\+Event \&e)
+\begin{DoxyCompactList}\small\item\em Function to allow keypresses to be used in this class. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_paddle_a37363d3c52d8ee0efe2df71b51282e17}{check\+Collisions}} (\mbox{\hyperlink{class_physics_object}{Physics\+Object}} \&other) const
+\begin{DoxyCompactList}\small\item\em Function to allow collision checks to be done from this class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Creates the \mbox{\hyperlink{class_physics_object}{Physics\+Object}} class deriving from the \mbox{\hyperlink{class_physics_object}{Physics\+Object}} class. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_paddle_aba2e99ac823862ddf144fe3b4d1e3330}\label{class_paddle_aba2e99ac823862ddf144fe3b4d1e3330}} 
+\index{Paddle@{Paddle}!Paddle@{Paddle}}
+\index{Paddle@{Paddle}!Paddle@{Paddle}}
+\doxysubsubsection{\texorpdfstring{Paddle()}{Paddle()}}
+{\footnotesize\ttfamily Paddle\+::\+Paddle (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2f}]{position,  }\item[{sf\+::\+Vector2f}]{dimensions,  }\item[{sf\+::\+Color}]{color }\end{DoxyParamCaption})}
+
+
+
+Function to pass data from the \mbox{\hyperlink{class_game}{Game}} class. 
+
+\mbox{\hyperlink{class_paddle}{Paddle}} function used to create and store data for the paddle object. $<$ Sets velocity of the paddle to 0 so that it does not move in each frame unless a key is pressed to move it.
+
+$<$ Sets position of the paddle to the data passed through the calling of the function.
+
+$<$ Sets size of the paddle to the data passed through the calling of the function.
+
+$<$ Sets origin of the paddle to the data passed through the calling of the function.
+
+$<$ Sets fill colour of the paddle to the data passed through the calling of the function.
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_paddle_a37363d3c52d8ee0efe2df71b51282e17}\label{class_paddle_a37363d3c52d8ee0efe2df71b51282e17}} 
+\index{Paddle@{Paddle}!checkCollisions@{checkCollisions}}
+\index{checkCollisions@{checkCollisions}!Paddle@{Paddle}}
+\doxysubsubsection{\texorpdfstring{checkCollisions()}{checkCollisions()}}
+{\footnotesize\ttfamily bool Paddle\+::check\+Collisions (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_physics_object}{Physics\+Object}} \&}]{other }\end{DoxyParamCaption}) const}
+
+
+
+Function to allow collision checks to be done from this class. 
+
+\mbox{\hyperlink{class_paddle}{Paddle}} check\+Collisions function to check the global bounds intersections with other physics objects. $<$ Gets any intersects between the paddle\textquotesingle{}s global bounds and the physics object\textquotesingle{}s global bounds.\mbox{\Hypertarget{class_paddle_afe2b129df6a2fcf916ef1f6e0e02ae86}\label{class_paddle_afe2b129df6a2fcf916ef1f6e0e02ae86}} 
+\index{Paddle@{Paddle}!processEvent@{processEvent}}
+\index{processEvent@{processEvent}!Paddle@{Paddle}}
+\doxysubsubsection{\texorpdfstring{processEvent()}{processEvent()}}
+{\footnotesize\ttfamily void Paddle\+::process\+Event (\begin{DoxyParamCaption}\item[{sf\+::\+Event \&}]{e }\end{DoxyParamCaption})}
+
+
+
+Function to allow keypresses to be used in this class. 
+
+\mbox{\hyperlink{class_paddle}{Paddle}} process\+Event function to check for keys pressed to move the paddle. $<$ If statement to check if the event is a key press.
+
+$<$ Check if the key press is the left arrow.
+
+$<$ Move the paddle to the left by a portion of the size of the paddle.
+
+$<$ Check if the key press if the right arrow.
+
+$<$ Move the paddle to the right by a portion of the size of the paddle.
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Program Files (x86)/\+Microsoft Visual Studio/2017/\+Projects/\+Breakout P2409414/\+Breakout P2409414/Paddle.\+h\item 
+D\+:/\+Program Files (x86)/\+Microsoft Visual Studio/2017/\+Projects/\+Breakout P2409414/\+Breakout P2409414/Paddle.\+cpp\end{DoxyCompactItemize}

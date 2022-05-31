@@ -1,0 +1,73 @@
+\hypertarget{class_borders}{}\doxysection{Borders Class Reference}
+\label{class_borders}\index{Borders@{Borders}}
+
+
+{\ttfamily \#include $<$Borders.\+h$>$}
+
+
+
+Inherits sf\+::\+Rectangle\+Shape.
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_borders_a8e56a85dac50009f36433404e3708388}\label{class_borders_a8e56a85dac50009f36433404e3708388}} 
+\mbox{\hyperlink{class_borders_a8e56a85dac50009f36433404e3708388}{Borders}} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_borders_afefc93bbe17b0a93e7bd50b0602f4bbe}{Borders}} (sf\+::\+Vector2f position, sf\+::\+Vector2f dimensions, sf\+::\+Color color)
+\begin{DoxyCompactList}\small\item\em Function to pass data from the \mbox{\hyperlink{class_game}{Game}} class. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_borders_a7a0182f4f312fde06492b91367e623d1}{check\+Collisions}} (\mbox{\hyperlink{class_paddle}{Paddle}} \&other) const
+\begin{DoxyCompactList}\small\item\em Function to allow collision checks to be done from this class. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_borders_a86b3498489ac7efcc1bfa72f672f39b1}{check\+Collisions}} (\mbox{\hyperlink{class_physics_object}{Physics\+Object}} \&other) const
+\begin{DoxyCompactList}\small\item\em Function to allow collision checks to be done from this class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Creates the \mbox{\hyperlink{class_borders}{Borders}} class deriving from sf\+::\+Rectangle\+Shape 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_borders_afefc93bbe17b0a93e7bd50b0602f4bbe}\label{class_borders_afefc93bbe17b0a93e7bd50b0602f4bbe}} 
+\index{Borders@{Borders}!Borders@{Borders}}
+\index{Borders@{Borders}!Borders@{Borders}}
+\doxysubsubsection{\texorpdfstring{Borders()}{Borders()}}
+{\footnotesize\ttfamily Borders\+::\+Borders (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2f}]{position,  }\item[{sf\+::\+Vector2f}]{dimensions,  }\item[{sf\+::\+Color}]{color }\end{DoxyParamCaption})}
+
+
+
+Function to pass data from the \mbox{\hyperlink{class_game}{Game}} class. 
+
+\mbox{\hyperlink{class_borders}{Borders}} function used to create and store data for a border object. $<$ Sets position of the border to the data passed through the calling of the function.
+
+$<$ Sets size of the border to the data passed through the calling of the function.
+
+$<$ Sets origin of the border to the data passed through the calling of the function.
+
+$<$ Sets fill colour of the border to the data passed through the calling of the function.
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_borders_a7a0182f4f312fde06492b91367e623d1}\label{class_borders_a7a0182f4f312fde06492b91367e623d1}} 
+\index{Borders@{Borders}!checkCollisions@{checkCollisions}}
+\index{checkCollisions@{checkCollisions}!Borders@{Borders}}
+\doxysubsubsection{\texorpdfstring{checkCollisions()}{checkCollisions()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool Borders\+::check\+Collisions (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_paddle}{Paddle}} \&}]{other }\end{DoxyParamCaption}) const}
+
+
+
+Function to allow collision checks to be done from this class. 
+
+\mbox{\hyperlink{class_borders}{Borders}} check\+Collisions function used to check for global bounds intersects between \mbox{\hyperlink{class_borders}{Borders}} and the paddle. $<$ Gets any intersects between the border\textquotesingle{}s global bounds and the paddle\textquotesingle{}s global bounds.\mbox{\Hypertarget{class_borders_a86b3498489ac7efcc1bfa72f672f39b1}\label{class_borders_a86b3498489ac7efcc1bfa72f672f39b1}} 
+\index{Borders@{Borders}!checkCollisions@{checkCollisions}}
+\index{checkCollisions@{checkCollisions}!Borders@{Borders}}
+\doxysubsubsection{\texorpdfstring{checkCollisions()}{checkCollisions()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool Borders\+::check\+Collisions (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_physics_object}{Physics\+Object}} \&}]{other }\end{DoxyParamCaption}) const}
+
+
+
+Function to allow collision checks to be done from this class. 
+
+\mbox{\hyperlink{class_borders}{Borders}} check\+Collisions function used to check for global bounds intersects between borders and physics objects. $<$ Gets any intersects between the border\textquotesingle{}s global bounds and the physics object\textquotesingle{}s global bounds.
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Program Files (x86)/\+Microsoft Visual Studio/2017/\+Projects/\+Breakout P2409414/\+Breakout P2409414/Borders.\+h\item 
+D\+:/\+Program Files (x86)/\+Microsoft Visual Studio/2017/\+Projects/\+Breakout P2409414/\+Breakout P2409414/Borders.\+cpp\end{DoxyCompactItemize}

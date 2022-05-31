@@ -1,0 +1,99 @@
+\hypertarget{class_physics_object}{}\doxysection{Physics\+Object Class Reference}
+\label{class_physics_object}\index{PhysicsObject@{PhysicsObject}}
+
+
+{\ttfamily \#include $<$Physics\+Object.\+h$>$}
+
+
+
+Inherits sf\+::\+Rectangle\+Shape.
+
+
+
+Inherited by \mbox{\hyperlink{class_paddle}{Paddle}}.
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_physics_object_a0dd37cc0f9535b676d3df937eaeb4780}\label{class_physics_object_a0dd37cc0f9535b676d3df937eaeb4780}} 
+\mbox{\hyperlink{class_physics_object_a0dd37cc0f9535b676d3df937eaeb4780}{Physics\+Object}} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_physics_object_a269a3c4b00d6137d4cdecbff8e3962ac}{Physics\+Object}} (sf\+::\+Vector2f position, sf\+::\+Vector2f dimensions, sf\+::\+Vector2f velocity, sf\+::\+Color color)
+\begin{DoxyCompactList}\small\item\em Function to pass data from the \mbox{\hyperlink{class_game}{Game}} class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_physics_object_a1edf7e81036f37a7b8d663e5dd0d8f2e}{update}} (float time)
+\begin{DoxyCompactList}\small\item\em Function to allow updates to physics objects to be handled from within this class. \end{DoxyCompactList}\item 
+sf\+::\+Vector2f \mbox{\hyperlink{class_physics_object_ad83ea61237154ce2ca2b851e802a803a}{get\+Velocity}} ()
+\begin{DoxyCompactList}\small\item\em Function to send the velocity of the physics object to the \mbox{\hyperlink{class_game}{Game}} class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_physics_object_ae18bd8972356e0c4271a6c8d28d92c40}{set\+Velocity}} (sf\+::\+Vector2f velocity)
+\begin{DoxyCompactList}\small\item\em Function to allow data to be sent from the \mbox{\hyperlink{class_game}{Game}} class to this class in order to set the physics object\textquotesingle{}s velocity. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_physics_object_ab73f4cfe0fa6e929a8ccf949318e2590}\label{class_physics_object_ab73f4cfe0fa6e929a8ccf949318e2590}} 
+sf\+::\+Vector2f {\bfseries phys\+Velocity}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Creates the \mbox{\hyperlink{class_physics_object}{Physics\+Object}} class deriving from sf\+::\+Rectangle\+Shape 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_physics_object_a269a3c4b00d6137d4cdecbff8e3962ac}\label{class_physics_object_a269a3c4b00d6137d4cdecbff8e3962ac}} 
+\index{PhysicsObject@{PhysicsObject}!PhysicsObject@{PhysicsObject}}
+\index{PhysicsObject@{PhysicsObject}!PhysicsObject@{PhysicsObject}}
+\doxysubsubsection{\texorpdfstring{PhysicsObject()}{PhysicsObject()}}
+{\footnotesize\ttfamily Physics\+Object\+::\+Physics\+Object (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2f}]{position,  }\item[{sf\+::\+Vector2f}]{dimensions,  }\item[{sf\+::\+Vector2f}]{velocity,  }\item[{sf\+::\+Color}]{color }\end{DoxyParamCaption})}
+
+
+
+Function to pass data from the \mbox{\hyperlink{class_game}{Game}} class. 
+
+\mbox{\hyperlink{class_physics_object}{Physics\+Object}} function used to create and store data for a physics object. $<$ Sets position of the physics object to the data passed through the calling of the function.
+
+$<$ Sets size of the physics object to the data passed through the calling of the function.
+
+$<$ Sets origin of the physics object to the data passed through the calling of the function.
+
+$<$ Sets fill colour of the physics object to the data passed through the calling of the function.
+
+$<$ Sets velocity of the physics object to the data passed through the calling of the function.
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_physics_object_ad83ea61237154ce2ca2b851e802a803a}\label{class_physics_object_ad83ea61237154ce2ca2b851e802a803a}} 
+\index{PhysicsObject@{PhysicsObject}!getVelocity@{getVelocity}}
+\index{getVelocity@{getVelocity}!PhysicsObject@{PhysicsObject}}
+\doxysubsubsection{\texorpdfstring{getVelocity()}{getVelocity()}}
+{\footnotesize\ttfamily sf\+::\+Vector2f Physics\+Object\+::get\+Velocity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Function to send the velocity of the physics object to the \mbox{\hyperlink{class_game}{Game}} class. 
+
+\mbox{\hyperlink{class_physics_object}{Physics\+Object}} get\+Velocity function in order to send the value to the location called at. $<$ Returns the velocity.\mbox{\Hypertarget{class_physics_object_ae18bd8972356e0c4271a6c8d28d92c40}\label{class_physics_object_ae18bd8972356e0c4271a6c8d28d92c40}} 
+\index{PhysicsObject@{PhysicsObject}!setVelocity@{setVelocity}}
+\index{setVelocity@{setVelocity}!PhysicsObject@{PhysicsObject}}
+\doxysubsubsection{\texorpdfstring{setVelocity()}{setVelocity()}}
+{\footnotesize\ttfamily void Physics\+Object\+::set\+Velocity (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2f}]{velocity }\end{DoxyParamCaption})}
+
+
+
+Function to allow data to be sent from the \mbox{\hyperlink{class_game}{Game}} class to this class in order to set the physics object\textquotesingle{}s velocity. 
+
+\mbox{\hyperlink{class_physics_object}{Physics\+Object}} Set\+Velocity function to be passed a value from outside the class. $<$ Sets the velocity to the given value.\mbox{\Hypertarget{class_physics_object_a1edf7e81036f37a7b8d663e5dd0d8f2e}\label{class_physics_object_a1edf7e81036f37a7b8d663e5dd0d8f2e}} 
+\index{PhysicsObject@{PhysicsObject}!update@{update}}
+\index{update@{update}!PhysicsObject@{PhysicsObject}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Physics\+Object\+::update (\begin{DoxyParamCaption}\item[{float}]{time }\end{DoxyParamCaption})}
+
+
+
+Function to allow updates to physics objects to be handled from within this class. 
+
+\mbox{\hyperlink{class_physics_object}{Physics\+Object}} update function to get the object moving (created for the ball object). $<$ Stores the next position for the ball to be in using the current position + (the velocity of the ball $\ast$ by the time passed)
+
+$<$ Sets the position of the ball to the stored next position.
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Program Files (x86)/\+Microsoft Visual Studio/2017/\+Projects/\+Breakout P2409414/\+Breakout P2409414/Physics\+Object.\+h\item 
+D\+:/\+Program Files (x86)/\+Microsoft Visual Studio/2017/\+Projects/\+Breakout P2409414/\+Breakout P2409414/Physics\+Object.\+cpp\end{DoxyCompactItemize}

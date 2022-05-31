@@ -1,0 +1,65 @@
+\hypertarget{class_blocks}{}\doxysection{Blocks Class Reference}
+\label{class_blocks}\index{Blocks@{Blocks}}
+
+
+{\ttfamily \#include $<$Blocks.\+h$>$}
+
+
+
+Inherits sf\+::\+Rectangle\+Shape.
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_blocks_a939fb778f4fa67d3bdb60c319ed9caf8}\label{class_blocks_a939fb778f4fa67d3bdb60c319ed9caf8}} 
+\mbox{\hyperlink{class_blocks_a939fb778f4fa67d3bdb60c319ed9caf8}{Blocks}} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_blocks_a6382ffdc6a7cecbcca5681b51d54bf61}{Blocks}} (sf\+::\+Vector2f position, sf\+::\+Vector2f dimensions, sf\+::\+Color color, sf\+::\+Color color2)
+\begin{DoxyCompactList}\small\item\em Function to pass data from the \mbox{\hyperlink{class_game}{Game}} class. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_blocks_a3c41bdc24331740ae44b88ea13d99607}{check\+Collisions}} (\mbox{\hyperlink{class_physics_object}{Physics\+Object}} \&other) const
+\begin{DoxyCompactList}\small\item\em Function to allow collision checks to be done from this class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Creates the \mbox{\hyperlink{class_blocks}{Blocks}} class deriving from sf\+::\+Rectangle\+Shape 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_blocks_a6382ffdc6a7cecbcca5681b51d54bf61}\label{class_blocks_a6382ffdc6a7cecbcca5681b51d54bf61}} 
+\index{Blocks@{Blocks}!Blocks@{Blocks}}
+\index{Blocks@{Blocks}!Blocks@{Blocks}}
+\doxysubsubsection{\texorpdfstring{Blocks()}{Blocks()}}
+{\footnotesize\ttfamily Blocks\+::\+Blocks (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2f}]{position,  }\item[{sf\+::\+Vector2f}]{dimensions,  }\item[{sf\+::\+Color}]{color,  }\item[{sf\+::\+Color}]{color2 }\end{DoxyParamCaption})}
+
+
+
+Function to pass data from the \mbox{\hyperlink{class_game}{Game}} class. 
+
+\mbox{\hyperlink{class_blocks}{Blocks}} function used to create and store data for a block object. $<$ Sets position of the block to the data passed through the calling of the function.
+
+$<$ Sets size of the block to the data passed through the calling of the function.
+
+$<$ Sets origin of the block to the data passed through the calling of the function.
+
+$<$ Sets fill colour of the block to the data passed through the calling of the function.
+
+$<$ Sets outline colour of the block to the data passed through the calling of the function.
+
+$<$ Sets outline thickness to 5.
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_blocks_a3c41bdc24331740ae44b88ea13d99607}\label{class_blocks_a3c41bdc24331740ae44b88ea13d99607}} 
+\index{Blocks@{Blocks}!checkCollisions@{checkCollisions}}
+\index{checkCollisions@{checkCollisions}!Blocks@{Blocks}}
+\doxysubsubsection{\texorpdfstring{checkCollisions()}{checkCollisions()}}
+{\footnotesize\ttfamily bool Blocks\+::check\+Collisions (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_physics_object}{Physics\+Object}} \&}]{other }\end{DoxyParamCaption}) const}
+
+
+
+Function to allow collision checks to be done from this class. 
+
+\mbox{\hyperlink{class_blocks}{Blocks}} check\+Collisions function used to check for global bounds intersects between blocks and physics objects. $<$ Gets any intersects between the block\textquotesingle{}s global bounds and the physics object\textquotesingle{}s global bounds.
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Program Files (x86)/\+Microsoft Visual Studio/2017/\+Projects/\+Breakout P2409414/\+Breakout P2409414/Blocks.\+h\item 
+D\+:/\+Program Files (x86)/\+Microsoft Visual Studio/2017/\+Projects/\+Breakout P2409414/\+Breakout P2409414/Blocks.\+cpp\end{DoxyCompactItemize}
