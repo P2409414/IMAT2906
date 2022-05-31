@@ -1,0 +1,20 @@
+﻿  Blocks.cpp
+  Borders.cpp
+  Game.cpp
+d:\program files (x86)\microsoft visual studio\2017\projects\breakout p2409414\breakout p2409414\game.cpp(124): warning C4018: '<': signed/unsigned mismatch
+  Paddle.cpp
+d:\program files (x86)\microsoft visual studio\2017\projects\breakout p2409414\breakout p2409414\paddle.cpp(31): warning C4305: 'argument': truncation from 'double' to 'T'
+          with
+          [
+              T=float
+          ]
+d:\program files (x86)\microsoft visual studio\2017\projects\breakout p2409414\breakout p2409414\paddle.cpp(35): warning C4305: 'argument': truncation from 'double' to 'T'
+          with
+          [
+              T=float
+          ]
+  PhysicsObject.cpp
+  main.cpp
+d:\program files (x86)\microsoft visual studio\2017\projects\breakout p2409414\breakout p2409414\main.cpp(43): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  Generating Code...
+  Breakout P2409414.vcxproj -> D:\Program Files (x86)\Microsoft Visual Studio\2017\Projects\Breakout P2409414\Debug\Breakout P2409414.exe
